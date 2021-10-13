@@ -13,7 +13,7 @@ Qs = sorted(Qs)[::-1]
 print(f'Num unique triplets: {len(Qs)}')
 print(f'Top 5 Q values:      {", ".join([str(q) for q in Qs[:5]])}')
 
-print(f'You have done {round(100*len(unique)/(data[-1]["low_b"]**2), 4)}% of the total work.')
+print(f'You have done {round(2*100*len(unique)/(data[-1]["low_b"]*(data[-1]["low_b"])+1), 4)}% of the total work.')
 print()
 
 plt.hist(Qs, bins=50)
